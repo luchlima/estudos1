@@ -1,0 +1,55 @@
+.geral{
+    display: flex;
+    width: 1290px;
+    height: 580px;
+    border: solid green 2px;
+    justify-content: center;
+    align-items: center;
+}
+.mesa_frutas{
+    display: flex;
+    width: 900px;
+    height: 400px;
+    border: solid black 2px;
+    justify-content: center;
+    align-items: center;
+}
+.prateleiras_frutas{
+    display: flex;
+    width: 880px;
+    height: 380px;
+    border: solid red 2px;
+    justify-content: space-around;
+    align-items: center;
+}
+.banana_{
+    display: flex;
+    border: solid rgb(0, 0, 0) 2px;
+    width: 75px;
+    height: 75px;
+}
+.laranja_{
+    display: flex;
+    border: solid rgb(0, 0, 0) 2px;
+    width: 75px;
+    height: 75px;
+}
+.goiaba_{
+    display: flex;
+    border: solid rgb(0, 0, 0) 2px;
+    width: 75px;
+    height: 75px;
+}
+.pera_{
+    display: flex;
+    border: solid rgb(0, 0, 0) 2px;
+    width: 75px;
+    height: 75px;
+}
+.uva_{
+    display: flex;
+    border: solid rgb(0, 0, 0) 2px;
+    width: 75px;
+    height: 75px;
+}
+
