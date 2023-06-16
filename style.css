@@ -31,7 +31,7 @@
     justify-content: space-around;
     align-items: center;
 }
-.carrinho_de_compras{
+.carrinho{
     display: flex;
     width: 880px;
     height: 250px;

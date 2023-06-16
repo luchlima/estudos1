@@ -48,14 +48,37 @@ const produtos = [
                     </div>
 
                     <div class="preco_card">
-                        <button onclick="comprar(${i})">Adicionar</button>
+                        <button onclick="compra(${i})">Adicionar</button>
                     </div>
                 </div>
             </div>`;
             geral_frutas.innerHTML += frutas;
         }
     };
-    function comprar(i){
-        console.log("entrou")
+
+    var carrinho = document.getElementById("carrinho")
+
+    function compra(index){
+        var frutas = `
+        <div class="card_all">
+            <div class="card_1">
+                <div class="text_card">
+                    <p>${produtos[index].nome}</p>
+                </div>
+
+                <div class="img_card">
+                    <img src=${produtos[index].img}></img>
+                </div>
+
+                <div class="botao_card">
+                    <button onclick="romove(this)">Remove</button>
+                </div>
+            </div>
+        </div>`;
+        carrinho.innerHTML += frutas
     }
+    function remove(tag_html) {
+        tag_html.parentNode.parentNode.parentNode.remove()
+        console.log(tag_html)
+      }
     
