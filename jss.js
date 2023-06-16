@@ -47,7 +47,11 @@ const produtos = [
                         <img src=${produtos[i].img}></img>
                     </div>
 
-                    <div class="preco_card">
+                    <div class="valor_card">
+                        <p>${produtos[i].valor}</p>
+                    </div>
+
+                    <div class="botao_card">
                         <button onclick="compra(${i})">Adicionar</button>
                     </div>
                 </div>
@@ -58,16 +62,20 @@ const produtos = [
 
     var carrinho = document.getElementById("carrinho")
 
-    function compra(index){
+    function compra(adicionar_carrinho){
         var frutas = `
         <div class="card_all">
             <div class="card_1">
                 <div class="text_card">
-                    <p>${produtos[index].nome}</p>
+                    <p>${produtos[adicionar_carrinho].nome}</p>
                 </div>
 
                 <div class="img_card">
-                    <img src=${produtos[index].img}></img>
+                    <img src=${produtos[adicionar_carrinho].img}></img>
+                </div>
+
+                <div class="valor_card">
+                    <p>${produtos[adicionar_carrinho].valor}</p>
                 </div>
 
                 <div class="botao_card">
