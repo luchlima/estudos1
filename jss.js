@@ -71,7 +71,7 @@ const produtos = [
                 </div>
 
                 <div class="botao_card">
-                    <button onclick="romove(this)">Remove</button>
+                    <button onclick="remove(this)">Remover</button>
                 </div>
             </div>
         </div>`;
