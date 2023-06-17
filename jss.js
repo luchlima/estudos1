@@ -62,6 +62,7 @@ const produtos = [
 
     var carrinho = document.getElementById("carrinho")
 
+
     function compra(adicionar_carrinho){
         var frutas = `
         <div class="card_all">
@@ -85,8 +86,10 @@ const produtos = [
         </div>`;
         carrinho.innerHTML += frutas
     }
-    function remove(tag_html) {
-        tag_html.parentNode.parentNode.parentNode.remove()
-        console.log(tag_html)
+    function remove(remover_produtos) {
+        remover_produtos.parentNode.parentNode.parentNode.remove()
+        console.log(remover_produtos)
       }
+
+      var footer = document.getElementById("")
     
